@@ -12,90 +12,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 
     <style>
-
-
-
       /* Responsive Design */
-@media (max-width: 1024px) {
-  .container {
-    grid-template-columns: 200px 1fr;
-  }
-  
-  .cards-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  
-  .control-panel {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  }
-}
+      @media (max-width: 1024px) {
+        .container {
+          grid-template-columns: 200px 1fr;
+        }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-  }
-  
-  header {
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .user-controls {
-    margin-top: 10px;
-  }
-  
-  .sidebar {
-    padding: 10px;
-  }
-  
-  .menu-item {
-    padding: 8px;
-  }
-  
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .control-panel {
-    grid-template-columns: 1fr;
-  }
-  
-  .map-container {
-    height: 300px;
-  }
-}
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
 
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1rem;
-  }
-  
-  .card-value {
-    font-size: 1.5rem;
-  }
-  
-  .control-card {
-    padding: 10px;
-  }
-  
-  .traffic-light .light {
-    width: 30px;
-    height: 30px;
-  }
-  
-  button {
-    padding: 6px 10px;
-  }
-  
-  .map-container {
-    height: 250px;
-  }
-}
+        .control-panel {
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        }
+      }
 
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr;
+        }
 
+        header {
+          flex-direction: column;
+          padding: 10px;
+          text-align: center;
+        }
 
+        .user-controls {
+          margin-top: 10px;
+        }
+
+        .sidebar {
+          padding: 10px;
+        }
+
+        .menu-item {
+          padding: 8px;
+        }
+
+        .cards-container {
+          grid-template-columns: 1fr;
+        }
+
+        .control-panel {
+          grid-template-columns: 1fr;
+        }
+
+        .map-container {
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          font-size: 1rem;
+        }
+
+        .card-value {
+          font-size: 1.5rem;
+        }
+
+        .control-card {
+          padding: 10px;
+        }
+
+        .traffic-light .light {
+          width: 30px;
+          height: 30px;
+        }
+
+        button {
+          padding: 6px 10px;
+        }
+
+        .map-container {
+          height: 250px;
+        }
+      }
 
       * {
         margin: 0;
@@ -470,7 +464,7 @@
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14H8c-1.66 0-3-1.34-3-3s1.34-3 3-3l.14.01C8.58 8.28 10.13 7 12 7c2.21 0 4 1.79 4 4h.5c1.38 0 2.5 1.12 2.5 2.5S17.88 16 16.5 16z"
             />
           </svg>
-          Weather Impacts
+          <a href="weather.html">Weather Impacts</a>
         </div>
         <div class="menu-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
