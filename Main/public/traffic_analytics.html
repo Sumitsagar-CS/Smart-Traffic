@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Analytics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+      section {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #16a34a;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #15803d;
+      }
+      #map {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 style="margin: 0; font-size: 24px">Traffic Analytics</h1>
+    </header>
+
+    <main>
+      <!-- Live Traffic Map -->
+      <section>
+        <h2 style="font-size: 20px; margin-top: 0">Live Traffic Map</h2>
+        <div id="map"></div>
+      </section>
+
+      <!-- Congestion Hotspots -->
+      <section>
+        <h2 style="font-size: 20px; margin-top: 0">Congestion Hotspots</h2>
+        <ul style="padding-left: 20px; font-size: 16px">
+          <li style="margin-bottom: 8px">Main St. - 80% Congested</li>
+          <li style="margin-bottom: 8px">Broadway Ave. - 65% Congested</li>
+          <li style="margin-bottom: 8px">5th Avenue - 72% Congested</li>
+        </ul>
+      </section>
+
+      <!-- Peak Traffic Hours -->
+      <section>
+        <h2 style="font-size: 20px; margin-top: 0">Peak Traffic Hours</h2>
+        <div
+          style="
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            margin-top: 20px;
+          "
+        >
+          <div
+            style="
+              background-color: #3b82f6;
+              height: 30%;
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding-bottom: 5px;
+              color: white;
+            "
+          >
+            7-9 AM
+          </div>
+          <div
+            style="
+              background-color: #3b82f6;
+              height: 50%;
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding-bottom: 5px;
+              color: white;
+            "
+          >
+            12-2 PM
+          </div>
+          <div
+            style="
+              background-color: #3b82f6;
+              height: 80%;
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding-bottom: 5px;
+              color: white;
+            "
+          >
+            5-7 PM
+          </div>
+          <div
+            style="
+              background-color: #3b82f6;
+              height: 40%;
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding-bottom: 5px;
+              color: white;
+            "
+          >
+            8-10 PM
+          </div>
+        </div>
+      </section>
+
+      <!-- Travel Time Estimates -->
+      <section>
+        <h2 style="font-size: 20px; margin-top: 0">Travel Time Estimates</h2>
+        <div style="font-size: 16px">
+          <p style="margin-bottom: 10px">Route 1: 25 min, 10 miles</p>
+          <p>Route 2: 18 min, 7 miles</p>
+        </div>
+      </section>
+
+      <!-- Predictive Insights -->
+      <section>
+        <h2 style="font-size: 20px; margin-top: 0">Predictive Insights</h2>
+        <div
+          style="
+            background-color: #f0fdf4;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #16a34a;
+            font-size: 16px;
+          "
+        >
+          <p style="margin: 0">Best time to travel: 2 PM</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px 0; margin-top: 20px">
+      <button>Download Report</button>
+    </footer>
+
+    <!-- Google Maps API Script -->
+    <script>
+      function initMap() {
+        // Default location (can be changed to your city)
+        const center = { lat: 40.7128, lng: -74.006 }; // New York City
+
+        // Create map
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: center,
+          mapTypeId: "roadmap",
+        });
+
+        // Enable traffic layer
+        const trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
+      }
+    </script>
+
+    <!-- Load Google Maps API with your API key -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=visualization"
+    ></script>
+  </body>
+</html>
