@@ -1,0 +1,29 @@
+Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
+
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrEpj3cs4nrPVbAY_JsnbbOuh3VmIXL1w",
+    authDomain: "smart-traffic-29aef.firebaseapp.com",
+    databaseURL: "https://smart-traffic-29aef-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "smart-traffic-29aef",
+    storageBucket: "smart-traffic-29aef.firebasestorage.app",
+    messagingSenderId: "183421796040",
+    appId: "1:183421796040:web:2127263784186644132ffd",
+    measurementId: "G-C2JJ1Z1KX6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
