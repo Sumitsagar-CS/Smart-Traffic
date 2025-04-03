@@ -141,6 +141,12 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        white-space: nowrap; /* Add this line */
+      }
+      
+      #live-clock {
+        min-width: 180px; /* Add this new rule */
+        text-align: right;
       }
 
       .sidebar {
@@ -435,7 +441,7 @@
           Smart Traffic Control
         </div>
         <div class="user-controls">
-          <span>March 24, 2025</span>
+          <span id="live-clock">March 24, 2025</span>  <!-- Add id here -->
           <span>Admin</span>
         </div>
       </header>
@@ -877,5 +883,27 @@
         });
       });
     </script>
+    <script>
+  // Live clock function
+  function updateClock() {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-US', { 
+      month: 'short', 
+      day: 'numeric', 
+      year: 'numeric' 
+    });
+    const timeStr = now.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+    document.getElementById('live-clock').textContent = `${dateStr} ${timeStr}`;
+  }
+
+  // Update immediately and then every second
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+</body> <!-- This is the closing body tag that should already exist -->
   </body>
 </html>
