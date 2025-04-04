@@ -51,7 +51,8 @@ We present a **Smart Traffic Management System** — a centralized platform that
 ## 🖥️ Screenshots
 
 > - Home/Map page  
-<img src="main/Screenshot 2025-04-04 150612.png">
+![Home Page Screenshot](<Screenshot 2025-04-04 150612-1.png>)
+
 > - User Settings
 ![User Settings Screenshot](<Screenshot 2025-04-04 150726.png>)
 
