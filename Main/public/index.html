@@ -11,7 +11,7 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 
-    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" />
 
     <style>
       /* Responsive Design */
@@ -143,7 +143,7 @@
         align-items: center;
         white-space: nowrap; /* Add this line */
       }
-      
+
       #live-clock {
         min-width: 180px; /* Add this new rule */
         text-align: right;
@@ -441,7 +441,8 @@
           Smart Traffic Control
         </div>
         <div class="user-controls">
-          <span id="live-clock">March 24, 2025</span>  <!-- Add id here -->
+          <span id="live-clock">March 24, 2025</span>
+          <!-- Add id here -->
           <span>Admin</span>
         </div>
       </header>
@@ -461,7 +462,10 @@
               d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"
             />
           </svg>
-          <a href="https://www.google.co.in/maps/@28.6620437,77.4870344,11.63z/data=!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D">Traffic Map</a>
+          <a
+            href="https://www.google.co.in/maps/@28.6620437,77.4870344,11.63z/data=!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D"
+            >Traffic Map</a
+          >
         </div>
         <div class="menu-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -578,7 +582,7 @@
         <div class="control-panel">
           <div class="control-card">
             <div class="control-header">
-              <div class="control-title">Main St & 5th Ave</div>
+              <div class="control-title">Sector 62 Circle</div>
               <div class="control-status status-active">Active</div>
             </div>
 
@@ -607,7 +611,7 @@
 
           <div class="control-card">
             <div class="control-header">
-              <div class="control-title">Broadway & Park Ave</div>
+              <div class="control-title">Grand Trunk Road</div>
               <div class="control-status status-active">Active</div>
             </div>
 
@@ -636,7 +640,7 @@
 
           <div class="control-card">
             <div class="control-header">
-              <div class="control-title">Highway 101 Entrance</div>
+              <div class="control-title">Delhi Noida Direct Flyway</div>
               <div class="control-status status-active">Active</div>
             </div>
 
@@ -884,25 +888,27 @@
       });
     </script>
     <script>
-  // Live clock function
-  function updateClock() {
-    const now = new Date();
-    const dateStr = now.toLocaleDateString('en-US', { 
-      month: 'short', 
-      day: 'numeric', 
-      year: 'numeric' 
-    });
-    const timeStr = now.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    });
-    document.getElementById('live-clock').textContent = `${dateStr} ${timeStr}`;
-  } //system
+      // Live clock function
+      function updateClock() {
+        const now = new Date();
+        const dateStr = now.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric",
+        });
+        const timeStr = now.toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
+        document.getElementById(
+          "live-clock"
+        ).textContent = `${dateStr} ${timeStr}`;
+      } //system
 
-  // Update immediately and then every second
-  updateClock();
-  setInterval(updateClock, 1000);
-</script>
+      // Update immediately and then every second
+      updateClock();
+      setInterval(updateClock, 1000);
+    </script>
   </body>
 </html>
