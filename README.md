@@ -10,9 +10,9 @@ Live Site: [smart-traffic-29aef.web.app](https://smart-traffic-29aef.web.app/)
 
 Traditional traffic signal systems in rapidly urbanizing cities like Ghaziabad are rigid, outdated, and unable to adapt to real-time traffic conditions. This results in:
 
-- Excessive wait times at signals ⏳  
-- Increased pollution due to idling vehicles 🌫️  
-- Higher chances of road rage and accidents 🚧  
+- Excessive wait times at signals ⏳
+- Increased pollution due to idling vehicles 🌫️
+- Higher chances of road rage and accidents 🚧
 
 ---
 
@@ -25,62 +25,58 @@ We present a **Smart Traffic Management System** — a centralized platform that
 ## 💡 Features
 
 ### 👤 For Users
-- 🔍 **Live Traffic Monitoring** with Google Maps API  
-- 🛣️ **Smart Route Suggestions** for faster travel  
-- 🚧 **Issue Reporting** (accidents, congestion, roadblocks)  
-- ⚙️ **Customizable User Settings** (notifications, map style, preferences)  
-- 🎙️ **Voice & Accessibility Support**  
+
+- 🔍 **Live Traffic Monitoring** with Google Maps API
+- 🛣️ **Smart Route Suggestions** for faster travel
+- 🚧 **Issue Reporting** (accidents, congestion, roadblocks)
+- ⚙️ **Customizable User Settings** (notifications, map style, preferences)
+- 🎙️ **Voice & Accessibility Support**
 
 ### 🔐 For Admins
-- 🛡️ **Secure Login System**  
-- 🧠 **AI-Controlled Signal Dashboard**  
+
+- 🛡️ **Secure Login System**
+- 🧠 **AI-Controlled Signal Dashboard**
 - 📊 **Live Monitoring of Road Networks**
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend  | Backend/API | Tools/Deployment |
-|-----------|-------------|------------------|
-| HTML, CSS, JavaScript | Google Maps API | Firebase |
-| Tailwind CSS (for styles) | AI Signal Logic (JS) | GitHub |
-| Responsive Design | NoSQL (if extended) | Netlify/Vercel (optional) |
+| Frontend                  | Backend/API          | Tools/Deployment          |
+| ------------------------- | -------------------- | ------------------------- |
+| HTML, CSS, JavaScript     | Google Maps API      | Firebase                  |
+| Tailwind CSS (for styles) | AI Signal Logic (JS) | GitHub                    |
+| Responsive Design         | NoSQL (if extended)  | Netlify/Vercel (optional) |
 
 ---
 
 ## 🖥️ Screenshots
 
 > - Home/Map page  
-![Home Page Screenshot](<Screenshot 2025-04-04 150612-1.png>)
+>   <img src="Main\Screenshot 2025-04-04 150612.png" alt="Home Page Screenshot">
 
 > - User Settings
-![User Settings Screenshot](<Screenshot 2025-04-04 150726.png>)
+>   <img src="Main\Screenshot 2025-04-04 150726.png" alt="User Settings Screenshot">
 
-> - Admin Login or Dashboard 
-![alt text](<Screenshot 2025-04-04 150747.png>)
-
----
-
-## 📽️ Demo Video
-
-[![Watch Demo](https://img.shields.io/badge/Watch%20Demo-YouTube-red)](https://your-demo-link.com)
+> - Admin Login or Dashboard
+>   <img src="Main\Screenshot 2025-04-04 150747.png" alt="Admin Portal Screenshot">
 
 ---
 
 ## 👨‍💻 Team Members
 
-- Shreya – UI/UX Design  
-- Aastik – AI Logic & Integration  
-- Harshit – Testing & Feature Integration  
-- Mayank – Admin & AI Signal Setup  
+- Shreya – UI/UX Design
+- Aastik – AI Logic & Integration
+- Harshit – Testing & Feature Integration
+- Mayank – Admin & AI Signal Setup
 
 ---
 
 ## 🧠 Future Scope
 
-- Integration with real-time CCTV & vehicle detection  
-- AI-based prediction models for traffic forecasting  
-- Public transport integration (bus/metro tracking)  
+- Integration with real-time CCTV & vehicle detection
+- AI-based prediction models for traffic forecasting
+- Public transport integration (bus/metro tracking)
 - Admin dashboard analytics and history trends
 
 ---
