@@ -66,7 +66,7 @@ We present a **Smart Traffic Management System** — a centralized platform that
 ## 👨‍💻 Team Members
 
 - Shreya – UI/UX Design
-- Aastik – AI Logic & Integration
+- Astik – AI Logic & Integration
 - Harshit – Testing & Feature Integration
 - Mayank – Admin & AI Signal Setup
 
